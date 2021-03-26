@@ -8,6 +8,13 @@
   outline: none;
   font-family: "Kanit", sans-serif;
 }
+ul {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
 :root {
   --main-color: #f16136;
 }
@@ -17,6 +24,18 @@ header {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #f7e7e7;
+}
+header .hamburger {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  top: 26px;
+  font-size: 20px;
+  display: none;
 }
 header .Logo img {
   margin-left: 75px;
@@ -38,6 +57,7 @@ header .contact .numbers {
   margin-left: 10px;
   color: #57606f;
   font-size: 14px;
+  white-space: nowrap;
 }
 header .sections {
   display: flex;
@@ -124,6 +144,9 @@ header .profile .profile-name {
   display: flex;
   align-items: center;
   padding: 0px 40px 0px 15px;
+}
+header .profile .profile-name span {
+  white-space: nowrap;
 }
 header .arrow-down {
   position: absolute;
